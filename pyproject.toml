@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model_inspector"
+version = "0.1.0"
+description = "Run and inspect any model without its weights: procedural tensors generated on the fly"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ilia Badanin" }]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.1"]
+
+[project.optional-dependencies]
+hf = ["transformers>=4.45"]
+
+[project.urls]
+Repository = "https://github.com/nov3o/model_inspector"
+
+[tool.setuptools]
+packages = ["model_inspector"]
